@@ -6,7 +6,7 @@ import { BooksComponent } from './books/books.component';
 
 const routes: Routes = [
   {
-    path: 'principles',
+    path: 'ext1',
     loadChildren: () => import('app1/Module').then(m => m.PrinciplesModule)
   },
   // {
