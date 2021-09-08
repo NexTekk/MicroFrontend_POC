@@ -1,3 +1,33 @@
-<a [routerLink]="['/ext1/principles']">Principles</a> | <a [routerLink]="['/food']">Food</a> | <a [routerLink]="['/books']">Books</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">AppDev</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['']" [routerLinkActive]="['active']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/ext1/principles']" [routerLinkActive]="['active']">SOLID Principles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/12factors']" [routerLinkActive]="['active']">12 Factors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/books']" [routerLinkActive]="['active']">Books</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

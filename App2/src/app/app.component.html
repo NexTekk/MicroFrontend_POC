@@ -1,25 +1,75 @@
-<style>
-  table, td, th {
-    border: 1px solid red;
-    color: red;
-  }
-  table {
-    width: 500px;
-  }
-</style>
 <div>
-  <h3>Food</h3>
-  <table>
+  <br/>
+  <br/>
+  <h3 class="bd-title">The 12 Factors</h3>
+  <table class="table  table-striped">
     <thead>
-      <tr>
-        <th>Food</th>
+      <tr class="table-light">
+        <th></th>
+        <th>Factor</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Jollof Rice</td>
-        <td>Rice cooked with stew. Yum!</td>
+        <th scope="row">I</th>
+        <td>Codebase</td>
+        <td>One codebase tracked in revision control, many deploys</td>
+      </tr>
+      <tr>
+        <th scope="row">II</th>
+        <td>Dependencies</td>
+        <td>Explicitly declare and isolate dependencies</td>
+      </tr>
+      <tr>
+        <th scope="row">III</th>
+        <td>Config</td>
+        <td>Store config in the environment</td>
+      </tr>
+      <tr>
+        <th scope="row">IV</th>
+        <td>Backing services</td>
+        <td>Treat backing services as attached resources</td>
+      </tr>
+      <tr>
+        <th scope="row">V</th>
+        <td> Build, release, run</td>
+        <td>Strictly separate build and run stages</td>
+      </tr>
+      <tr>
+        <th scope="row">VI</th>
+        <td>Processes</td>
+        <td>Execute the app as one or more stateless processes</td>
+      </tr>
+      <tr>
+        <th scope="row">VII</th>
+        <td>Port binding</td>
+        <td>Export services via port binding</td>
+      </tr>
+      <tr>
+        <th scope="row">VIII</th>
+        <td>Concurrency</td>
+        <td>Scale out via the process model</td>
+      </tr>
+      <tr>
+        <th scope="row">IX</th>
+        <td>Disposability</td>
+        <td>Maximize robustness with fast startup and graceful shutdown</td>
+      </tr>
+      <tr>
+        <th scope="row">X</th>
+        <td>Dev/prod parity</td>
+        <td>Keep development, staging, and production as similar as possible</td>
+      </tr>
+      <tr>
+        <th scope="row">XI</th>
+        <td>Logs</td>
+        <td>Treat logs as event streams</td>
+      </tr>
+      <tr>
+        <th scope="row">XII</th>
+        <td>Admin processes</td>
+        <td>Run admin/management tasks as one-off processes</td>
       </tr>
     </tbody>
   </table>

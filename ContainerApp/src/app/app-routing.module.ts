@@ -6,6 +6,14 @@ import { BooksComponent } from './books/books.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: BooksComponent
+  },
+  {
+    path: 'books',
+    component: BooksComponent
+  },
+  {
     path: 'ext1',
     loadChildren: () => import('app1/Module').then(m => m.PrinciplesModule)
   },
@@ -19,7 +27,7 @@ const routes: Routes = [
   //     .then(m => m.PrinciplesModule)
   // },
   {
-    path: 'food',
+    path: '12factors',
     loadChildren: () => import('app2/Module').then(m => m.AppModule)
   },
   {
