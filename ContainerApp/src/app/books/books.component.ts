@@ -9,7 +9,6 @@ export class BooksComponent {
 
   constructor() {
     this.showWelcome = location.pathname !== '/books';
-    console.log(this.showWelcome);
   }
 
   title = 'Books';
